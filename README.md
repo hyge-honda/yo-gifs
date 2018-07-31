@@ -1,5 +1,5 @@
 
-Send Pug gifs to your Yo buddies!
+Send Pug (or any) gifs to your Yo buddies!
 
 ![](http://cl.ly/image/1C252V3M2037/yo-pugs.gif)
 [http://docs.justyo.co/v2.0/docs/](http://docs.justyo.co/v2.0/docs/)
@@ -8,53 +8,38 @@ Specify the response on the notification from your code!
 
 ![](http://cl.ly/image/3S362I430J0d/Untitled.png)
 
-## Getting Started
+## Getting Started(Herokuを用いた方法のみ)
 
-* Install [pip](http://pip.readthedocs.org/en/latest/installing.html) package manager if you haven't yet:
 
-        Linux: sudo apt-get install python-pip
-        Mac: brew install python
+* YoのAPIを使う準備
 
-* Install [virtualenv](http://virtualenv.readthedocs.org/en/latest/virtualenv.html#installation):
+[https://dashboard.justyo.co/](https://dashboard.justyo.co/) にアクセス
+![](https://i.imgur.com/G6Y7Hps.png)
 
-        sudo pip install virtualenv
+Appsをクリック後Create Appタブから
 
-* Clone this repo: 
+![](https://i.imgur.com/TI93ztH.png)
 
-        git clone git@github.com:YoApp/yo-pugs.git
-        cd yo-pugs
-        
-* Create a virtualenv, activate it and install dependencies:
+※任意の名前には英数字とハイフンのみ使用できる
+**ここでの任意の名前は後に使うので取っておく**
 
-        virtualenv env
-        . env/bin/activate
-        pip install -r requirements.txt
+Createをクリックする (ここでは任意の名前を`yo-send-gifs`としている)
+![](https://i.imgur.com/CK5xOpz.png)
 
-* Login or signup using your personal account to https://dev.justyo.co/
-![Create client](http://cl.ly/image/3S2u2U0X0H0d/Screen%20Shot%202015-07-27%20at%201.37.00%20PM.png)
+* Heroku側での作業
+ 
+ Herokuへのデプロイ
 
-* Create a new Yo app (Yo OAuth Client) 
-![Create client](http://cl.ly/image/2S1O2w2f0i0B/Create%20new%20client.png)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) <-をクリック 
 
-* Great! You created your Yo client! Here are the things you'll need to get started:
-![View new client](http://cl.ly/image/2f1E3y2Y2H3r/View%20new%20client%20info_censored.jpg)
+![](https://i.imgur.com/GPB5irV.png)
 
-* Generate a secret key for your flask app to store sessions in a secure way:  
+GIPHY_KEYWORDには英語でgifの検索ワードを入力する
+(`cats`, `pugs`, `dogs`など)
 
-You can use this [online password generator](https://www.random.org/passwords/?num=1&len=24&format=plain)  
+Deploy Appをクリックして全てにチェックが付けば終了！
 
-* Export your client id, secret and redirect uri to environment variables [(why?)](http://12factor.net/config):
+Viewをクリックするかhttps://<任意の名前>.herokuapp.comにアクセスする
 
-        export CLIENT_ID=<your client id>
-        export CLIENT_SECRET=<your client id>
-        export REDIRECT_URI=<your redirect uri>
-        export SECRET_KEY=<your secret key from the step above>
-        export GIPHY_KEYWORD=PUGS
 
-* Run the server:
-
-        python server.py
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-[Apply for our Yo Developer Program](https://yoapp.typeform.com/to/xi0WMz)
+[GIPHY_KEYWORDを`cats`にした例](https://yo-cats.herokuapp.com)
