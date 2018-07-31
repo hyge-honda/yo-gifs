@@ -1,6 +1,7 @@
 
 $( "span" )
     .mouseup(function() {
+        import { Spinner } from "spin.js"
         var opts = {
           lines: 15, // The number of lines to draw
           length: 7, // The length of each line
