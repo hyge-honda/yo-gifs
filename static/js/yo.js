@@ -40,7 +40,7 @@ $( "span" )
             },
             success: function(response) {
 
-                spinner.stop();
+                //spinner.stop();
                 $(this).text('Sent Yo!');
                 $(this).show();
 
@@ -55,7 +55,7 @@ $( "span" )
             },
             error: function(error) {
 
-                spinner.stop();
+                //spinner.stop();
                 console.log(error);
 
                 $(this).text('Failed üÅE');
