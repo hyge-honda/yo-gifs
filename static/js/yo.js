@@ -31,7 +31,7 @@ $( "span" )
         var link = $('body').css('background-image');
         var gif = ".gif";
         link = link.replace('url("https://media0.giphy.com/media/','https://i.giphy.com/').replace('")','').slice('0', '-47');
-        link = link += gif
+        link += gif
         $.ajax({
             context: this,
             type: "POST",
@@ -49,7 +49,7 @@ $( "span" )
                 var me = $(this);
                 setTimeout(
                     function(){
-                        me.text(response);
+                        me.text();
                     },
                     2000
                 );
