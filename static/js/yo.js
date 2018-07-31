@@ -29,7 +29,7 @@ $( "span" )
         var name = $(this).text();
         var username = $(this).data('username');
         var link = $('body').css('background-image');
-        link = link.replace('url(','').replace(')','');
+        link = link.replace('url("','').replace('")','');
         $.ajax({
             context: this,
             type: "POST",
@@ -47,7 +47,7 @@ $( "span" )
                 var me = $(this);
                 setTimeout(
                     function(){
-                        me.text(link);
+                        me.text(response);
                     },
                     2000
                 );
