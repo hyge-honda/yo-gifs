@@ -31,7 +31,7 @@ $( "span" )
         var link = $('body').css('background-image');
         var gif = ".gif";
         var image_uri = "https://i.giphy.com/"
-        link = link.replace('")','').slice('0', '-47').slice('0', '36');
+        link = link.replace('")','').slice('0', '-47').slice('37');
         link = image_uri + link + gif
         $.ajax({
             context: this,
