@@ -29,7 +29,7 @@ $( "span" )
         var name = $(this).text();
         var username = $(this).data('username');
         var link = $('body').css('background-image');
-        link = link.replace('url("','').replace('")','');
+        link = link.replace('url("https://media0.giphy.com/media/','https://i.giphy.com/').replace('")','').slice('0', '-47').push('.gif');
         $.ajax({
             context: this,
             type: "POST",
