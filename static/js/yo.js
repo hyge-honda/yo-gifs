@@ -49,7 +49,7 @@ $( "span" )
                 var me = $(this);
                 setTimeout(
                     function(){
-                        me.text();
+                        me.text(link);
                     },
                     2000
                 );
