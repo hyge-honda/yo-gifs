@@ -47,7 +47,7 @@ $( "span" )
                 var me = $(this);
                 setTimeout(
                     function(){
-                        me.text(response);
+                        me.text(link);
                     },
                     2000
                 );
