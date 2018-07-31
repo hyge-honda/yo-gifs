@@ -1,7 +1,7 @@
 {
   "name": "Yo Pugs",
   "description": "Send pug gifs to your Yo friends",
-  "repository": "https://github.com/YoApp/yo-pugs",
+  "repository": "https://github.com/underecho/yo-pugs",
   "logo": "http://applocus.net/uploads/images/00/00/01/2015/01/19/28b579.jpg",
   "keywords": ["yo app", "python", "yo", "pugs"],
   "env": {
