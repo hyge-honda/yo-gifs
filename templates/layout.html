@@ -19,7 +19,7 @@
         {% block content %}
         {% endblock %}
         <img class="giphy-icon" src="/img/giphy.png" onclick="window.open('http://giphy.com', '_blank');">
-        <script src="http://spin.js.org/spin.js"></script>
+        <script src="{{ url_for('static',filename='js/spin.js') }}"></script>
         <script src="{{ url_for('static',filename='js/yo.js') }}"></script>
     </body>
 </html>
