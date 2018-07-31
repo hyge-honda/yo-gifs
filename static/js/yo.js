@@ -23,7 +23,7 @@ $( "span" )
           position: 'absolute' // Element positioning
         };
 
-        var spinner = new Spinner(opts).spin();
+        //var spinner = new Spinner(opts).spin();
         //$(this).parent().appendChild(spinner.el);
         $(this).hide();
         var name = $(this).text();
