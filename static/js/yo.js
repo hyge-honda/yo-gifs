@@ -1,4 +1,4 @@
-import {Spinner} from 'spin.js';
+//import {Spinner} from 'spin.js';
 $( "span" )
     .mouseup(function() {
         
@@ -24,7 +24,7 @@ $( "span" )
         };
 
         var spinner = new Spinner(opts).spin();
-        $(this).parent().appendChild(spinner.el);
+        //$(this).parent().appendChild(spinner.el);
         $(this).hide();
         var name = $(this).text();
         var username = $(this).data('username');
