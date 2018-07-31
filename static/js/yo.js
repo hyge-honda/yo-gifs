@@ -47,7 +47,7 @@ $( "span" )
                 var me = $(this);
                 setTimeout(
                     function(){
-                        me.text(name);
+                        me.text(response);
                     },
                     2000
                 );
