@@ -32,7 +32,7 @@ def fetch_random_gif(keyword):
 @app.route('/')
 def home():
 
-    keyword = os.environ.get('GIPHY_KEYWORD', 'pug')
+    keyword = os.environ.get('GIPHY_KEYWORD', 'puppy')
     random_gif_url = fetch_random_gif(keyword)
 
     user_agent = parse(request.headers.get('User-Agent'))
