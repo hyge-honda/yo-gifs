@@ -70,7 +70,7 @@ def send_yo():
     yo.access_token = session.get('access_token')
     response = yo.send(username=request.form.get('username'),
                        link=request.form.get('link'),
-                       response_pair=u'🐶.👍')
+                       response_pair='🐶.👍')
     print response.status_code, response.text
     return response.text
 
